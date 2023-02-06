@@ -282,4 +282,4 @@ async def on_command_error(ctx, error):
      if isinstance(error, commands.CommandNotFound): 
          await ctx.reply("Invalid Command. Type **?help** to see all commands")
 
-bot.run('MTA0NDA2NDgwMjUyNTQyOTg0MA.GZrMGZ.lQkI08Cper-1NKOXLhkCttFOu2babbwx2HEJxg')
+bot.run('TOKEN')
