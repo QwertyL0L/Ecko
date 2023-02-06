@@ -27,7 +27,7 @@ def get_operator_fn(op):
         '^' : operator.xor,
         }[op]
 
-bot = commands.Bot(command_prefix='?',intents=discord.Intents.all())
+bot = commands.Bot(command_prefix='k?',intents=discord.Intents.all())
 
 r = sr.Recognizer()
 with sr.Microphone() as source:
@@ -280,6 +280,6 @@ async def tts(ctx, *, text: str):
 @bot.event
 async def on_command_error(ctx, error):
      if isinstance(error, commands.CommandNotFound): 
-         await ctx.reply("Invalid Command. Type **?help** to see all commands")
+         await ctx.reply("Invalid Command. Type **k?help** to see all commands")
 
 bot.run('TOKEN')
